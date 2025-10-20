@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chaveiro PRIME</title>
+  <link rel="icon" type="image/png" href="image/logo.png">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #001733;
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      padding: 40px 20px 20px;
+    }
+
+    header img {
+      width: 100px;
+    }
+
+    h1 {
+      margin: 10px 0 5px;
+      font-size: 32px;
+    }
+
+    h1 span {
+      color: #2E8BFF;
+      font-weight: bold;
+    }
+
+    p.subtitle {
+      color: #ccc;
+      margin-top: 0;
+      font-size: 16px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 25px 0;
+    }
+
+    .btn {
+      color: white;
+      text-decoration: none;
+      padding: 12px 18px;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: 0.2s;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+    }
+
+    /* Botão WhatsApp */
+    .btn.whatsapp {
+      background-color: #25D366;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn.whatsapp:hover {
+      background-color: #1ebe5d;
+    }
+
+    .btn.whatsapp .icon {
+      width: 22px;
+      height: 22px;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      margin: 30px 0;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .service {
+      width: 160px;
+    }
+
+    .service img {
+      width: 40px;
+      margin-bottom: 8px;
+    }
+
+    .service p {
+      font-size: 14px;
+      margin: 0;
+    }
+
+    .emergency {
+      background-color: #021b3a;
+      border: 1px solid #3a5ba0;
+      border-radius: 10px;
+      margin: 30px auto;
+      max-width: 600px;
+      padding: 20px;
+    }
+
+    .emergency h2 {
+      margin-top: 0;
+      color: #cce2ff;
+    }
+
+    .contact {
+      margin: 40px 0;
+    }
+
+    .contact .btn {
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
+    .social {
+      margin-top: 10px;
+    }
+
+    .social img {
+      width: 28px;
+      margin: 0 8px;
+      filter: brightness(0) invert(1);
+      opacity: 0.8;
+      transition: 0.2s;
+    }
+
+    .social img:hover {
+      opacity: 1;
+    }
+
+    /* ===== Animações ===== */
+    .anim-seed { opacity: 0; transform: translateY(14px); filter: blur(6px); }
+    .anim-in   { opacity: 1; transform: none; filter: none; transition: opacity .6s ease, transform .6s ease, filter .8s ease; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .anim-in { transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <header data-anim>
+    <img src="image/logo.png" alt="Logo Chaveiro Prime">
+    <h1>CHAVEIRO <span>PRIME</span></h1>
+    <p class="subtitle">Agilidade e confiança onde você estiver.</p>
+  </header>
+
+  <div class="buttons" data-anim>
+    <a href="https://wa.me/554797324516" class="btn whatsapp" aria-label="Chamar no WhatsApp">
+      <img src="image/whatsapp.svg" alt="WhatsApp" class="icon">
+      Chamar no WhatsApp
+    </a>
+  </div>
+
+  <div class="services">
+    <div class="service" data-anim>
+      <img src="image/key.png" alt="Cópia de chaves">
+      <p>Cópia de chaves</p>
+    </div>
+    <div class="service" data-anim>
+      <img src="image/door-opened.png" alt="Abertura de portas">
+      <p>Abertura de portas</p>
+    </div>
+    <div class="service" data-anim>
+      <img src="image/remote-control.png" alt="Programação de controles remotos">
+      <p>Programação de controles remotos</p>
+    </div>
+    <div class="service" data-anim>
+      <img src="image/lock.png" alt="Fechaduras eletrônicas e digitais">
+      <p>Fechaduras eletrônicas e digitais</p>
+    </div>
+  </div>
+
+  <div class="emergency" data-anim>
+    <h2>ATENDIMENTO DE EMERGÊNCIA 24 HORAS</h2>
+    <p>Perdeu a chave? Trancou o carro? Precisa abrir sua casa ou comércio com urgência?<br>
+    O Chaveiro PRIME atende 24 horas por dia, direto onde você estiver em Balneário Camboriú.</p>
+  </div>
+
+  <div class="contact" data-anim>
+    <a href="tel:+5547997324516" class="btn" style="background-color:#005eff;">📞 Ligar agora</a>
+    <div class="social">
+      <a href="#"><img src="image/facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="image/instagram.png" alt="Instagram"></a>
+      <a href="mailto:contato.chaveiroprime@gmail.com" aria-label="Enviar e-mail">
+  <img src="image/email.png" alt="Enviar e-mail para Chaveiro Prime">
+</a>
+
+    </div>
+  </div>
+
+  <!-- JS: animação em toda atualização -->
+  <script>
+  (function () {
+    const STAGGER_MS = 90;
+    const reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    function animate() {
+      const items = Array.from(document.querySelectorAll('[data-anim]'));
+      if (!items.length) return;
+
+      items.forEach(el => el.classList.add('anim-seed'));
+
+      let delay = 60;
+      items.forEach((el) => {
+        setTimeout(() => {
+          el.classList.add('anim-in');
+          el.classList.remove('anim-seed');
+        }, delay);
+        delay += STAGGER_MS;
+      });
+    }
+
+    if (!reduceMotion) {
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', animate);
+      } else {
+        animate();
+      }
+    }
+  })();
+  </script>
+</body>
+</html>
