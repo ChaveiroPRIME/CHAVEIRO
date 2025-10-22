@@ -3,165 +3,245 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chaveiro PRIME</title>
+  <title>Chaveiro PRIME | Cópia de Chaves e Abertura 24h</title>
+  <meta name="description" content="Chaveiro PRIME: cópia de chaves, abertura residencial e instalação de fechaduras digitais. Atendimento rápido e 24h em Balneário Camboriú e região.">
+
   <link rel="icon" type="image/png" href="image/logo.png">
-
-  <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="Chaveiro PRIME">
-  <meta property="og:description" content="Agilidade e confiança onde você estiver. Atendimento 24h em Balneário Camboriú e região.">
-  <meta property="og:image" content="https://chaveiroprime.com/image/logo2.jpg">
-  <meta property="og:url" content="https://chaveiroprime.com">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="pt_BR">
-
-  <!-- Twitter Card Meta Tags -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Chaveiro PRIME">
-  <meta name="twitter:description" content="Agilidade e confiança onde você estiver.">
-  <meta name="twitter:image" content="https://chaveiroprime.com/image/logo2.jpg">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 
   <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #001733;
-      color: white;
-      text-align: center;
-    }
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(160deg, #0a0f24 0%, #0e214d 60%, #14396b 100%);
+  color: white;
+  text-align: center;
+  line-height: 1.6;
+}
 
-    header {
-      padding: 40px 20px 20px;
-    }
+header {
+  padding: 50px 20px 25px;
+}
 
-    header img {
-      width: 100px;
-    }
+header img {
+  width: 110px;
+}
 
-    h1 {
-      margin: 10px 0 5px;
-      font-size: 32px;
-    }
+h1 {
+  margin: 10px 0 5px;
+  font-size: 36px;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+  color: #fff;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
 
-    h1 span {
-      color: #2E8BFF;
-      font-weight: bold;
-    }
+h1 span {
+  color: #1E90FF; /* Azul profissional */
+  font-weight: 700;
+  text-shadow: 0 2px 8px rgba(30,144,255,0.5);
+}
 
-    p.subtitle {
-      color: #ccc;
-      margin-top: 0;
-      font-size: 16px;
-    }
+p.subtitle {
+  color: #ddd;
+  margin-top: 5px;
+  font-size: 17px;
+}
 
-    .buttons {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin: 25px 0;
-    }
+/* BOTÕES */
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 25px 0;
+}
 
-    .btn {
-      color: white;
-      text-decoration: none;
-      padding: 12px 18px;
-      border-radius: 8px;
-      font-weight: 600;
-      transition: 0.2s;
-    }
+.btn {
+  color: white;
+  text-decoration: none;
+  padding: 14px 26px;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+  background: linear-gradient(135deg, #1E90FF, #63B8FF);
+}
 
-    .btn:hover {
-      opacity: 0.9;
-    }
+/* Hover premium */
+.btn:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 10px 20px rgba(30,144,255,0.5);
+}
 
-    /* Botão WhatsApp */
-    .btn.whatsapp {
-      background-color: #25D366;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-    }
+/* WhatsApp */
+.btn.whatsapp {
+  background-color: #25D366;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
 
-    .btn.whatsapp:hover {
-      background-color: #1ebe5d;
-    }
+.btn.whatsapp:hover {
+  background-color: #1ab854;
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 10px 20px rgba(26,184,84,0.5);
+}
 
-    .btn.whatsapp .icon {
-      width: 22px;
-      height: 22px;
-    }
+.btn.whatsapp .icon {
+  width: 22px;
+  height: 22px;
+}
 
-    .services {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 25px;
-      margin: 30px 0;
-      max-width: 800px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+/* SERVIÇOS */
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin: 30px 0;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-    .service {
-      width: 160px;
-    }
+.service {
+  width: 200px;
+  height: 140px;
+  cursor: pointer;
+  background: linear-gradient(145deg, rgba(255,255,255,0.05), rgba(255,255,255,0.1));
+  border-radius: 14px;
+  padding: 20px 10px;
+  border: 1px solid rgba(255,255,255,0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
 
-    .service img {
-      width: 40px;
-      margin-bottom: 8px;
-    }
+.service:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 12px 25px rgba(30,144,255,0.5);
+  border-color: rgba(30,144,255,0.5);
+}
 
-    .service p {
-      font-size: 14px;
-      margin: 0;
-    }
+.service img {
+  width: 46px;
+  margin-bottom: 12px;
+  filter: brightness(0) invert(1);
+  opacity: 0.95;
+  transition: all 0.25s ease;
+}
 
-    .emergency {
-      background-color: #021b3a;
-      border: 1px solid #3a5ba0;
-      border-radius: 10px;
-      margin: 30px auto;
-      max-width: 600px;
-      padding: 20px;
-    }
+.service:hover img {
+  opacity: 1;
+}
 
-    .emergency h2 {
-      margin-top: 0;
-      color: #cce2ff;
-    }
+.service p {
+  font-size: 15px;
+  margin: 0;
+  font-weight: 600;
+  color: #f5f5f5;
+  letter-spacing: 0.5px;
+}
 
-    .contact {
-      margin: 40px 0;
-    }
+/* EMERGÊNCIA */
+.emergency {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 14px;
+  margin: 40px auto;
+  max-width: 700px;
+  padding: 28px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+  backdrop-filter: blur(8px);
+}
 
-    .contact .btn {
-      display: inline-block;
-      margin-bottom: 10px;
-    }
+.emergency h2 {
+  margin-top: 0;
+  color: #1E90FF;
+  font-family: 'Montserrat', sans-serif;
+  text-shadow: 0 2px 6px rgba(30,144,255,0.4);
+}
 
-    .social {
-      margin-top: 10px;
-    }
+/* CONTATO */
+.contact {
+  margin: 50px 0 30px;
+}
 
-    .social img {
-      width: 28px;
-      margin: 0 8px;
-      filter: brightness(0) invert(1);
-      opacity: 0.8;
-      transition: 0.2s;
-    }
+.contact .btn {
+  background: linear-gradient(135deg, #1E90FF, #63B8FF);
+  border: 1px solid rgba(255,255,255,0.1);
+}
 
-    .social img:hover {
-      opacity: 1;
-    }
+.contact .btn:hover {
+  background: linear-gradient(135deg, #63B8FF, #1E90FF);
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 10px 20px rgba(30,144,255,0.5);
+}
 
-    /* ===== Animações ===== */
-    .anim-seed { opacity: 0; transform: translateY(14px); filter: blur(6px); }
-    .anim-in   { opacity: 1; transform: none; filter: none; transition: opacity .6s ease, transform .6s ease, filter .8s ease; }
+.social {
+  margin-top: 35px;
+}
 
-    @media (prefers-reduced-motion: reduce) {
-      .anim-in { transition: none !important; }
-    }
+.social img {
+  width: 28px;
+  margin: 0 8px;
+  filter: brightness(0) invert(1);
+  opacity: 0.8;
+  transition: all 0.25s ease;
+}
+
+.social img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* ANIMAÇÃO */
+.anim-seed {
+  opacity: 0;
+  transform: translateY(14px);
+  filter: blur(6px);
+}
+
+.anim-in {
+  opacity: 1;
+  transform: none;
+  filter: none;
+  transition: opacity .6s ease, transform .6s ease, filter .8s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .anim-in {
+    transition: none !important;
+  }
+}
+
+/* RESPONSIVO */
+@media (max-width: 480px) {
+  body {
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 28px;
+  }
+  .service {
+    width: 150px;
+    height: 110px;
+  }
+  .service img {
+    width: 36px;
+  }
+  .service p {
+    font-size: 13px;
+  }
+}
   </style>
 </head>
 <body>
@@ -171,50 +251,55 @@
     <p class="subtitle">Agilidade e confiança onde você estiver.</p>
   </header>
 
-  <div class="buttons" data-anim>
-    <a href="https://wa.me/554797324516" class="btn whatsapp" aria-label="Chamar no WhatsApp">
-      <img src="image/whatsapp.png" alt="WhatsApp" class="icon">
-      Chamar no WhatsApp
-    </a>
-  </div>
-
-  <div class="services">
-    <div class="service" data-anim>
-      <img src="image/key.png" alt="Cópia de chaves">
-      <p>Cópias de Chaves</p>
-    </div>
-    <div class="service" data-anim>
-      <img src="image/door-opened.png" alt="Abertura de portas">
-      <p>Abertura de Portas</p>
-    </div>
-    <div class="service" data-anim>
-      <img src="image/remote-control.png" alt="Programação de controles remotos">
-      <p>Programação de Controles Remotos</p>
-    </div>
-    <div class="service" data-anim>
-      <img src="image/lock.png" alt="Fechaduras eletrônicas e digitais">
-      <p>Fechaduras Eletrônicas e Digitais</p>
-    </div>
-  </div>
-
-  <div class="emergency" data-anim>
-    <h2>ATENDIMENTO DE EMERGÊNCIA 24 HORAS</h2>
-    <p>Perdeu a chave? Trancou o carro? Precisa abrir sua casa ou comércio com urgência?<br>
-    O Chaveiro PRIME atende 24 horas por dia, direto onde você estiver em Balneário Camboriú e Região.</p>
-  </div>
-
-  <div class="contact" data-anim>
-    <a href="tel:+5547997324516" class="btn" style="background-color:#005eff;">📞 Ligar agora</a>
-    <div class="social">
-      <a href="#"><img src="image/facebook.png" alt="Facebook"></a>
-      <a href="#"><img src="image/instagram.png" alt="Instagram"></a>
-      <a href="mailto:contato.chaveiroprime@gmail.com" aria-label="Enviar e-mail">
-        <img src="image/email.png" alt="Enviar e-mail para Chaveiro Prime">
+  <main>
+    <div class="buttons" data-anim>
+      <a href="https://wa.me/5547997324516" class="btn whatsapp" aria-label="Chamar no WhatsApp">
+        <img src="image/whatsapp.png" alt="WhatsApp" class="icon">
+        Chamar no WhatsApp
       </a>
     </div>
-  </div>
 
-  <!-- JS: animação em toda atualização -->
+    <div class="services">
+      <div class="service" data-service="copias" data-anim>
+        <img src="image/key.png" alt="Cópia de chaves">
+        <p>CÓPIA DE CHAVES</p>
+      </div>
+      <div class="service" data-service="abertura" data-anim>
+        <img src="image/door-opened.png" alt="Abertura de portas">
+        <p>ABERTURA RESIDENCIAL</p>
+      </div>
+      <div class="service" data-service="programacao" data-anim>
+        <img src="image/remote-control.png" alt="Programação de controles remotos">
+        <p>PROGRAMAÇÃO DE CONTROLES</p>
+      </div>
+      <div class="service" data-service="fechaduras" data-anim>
+        <img src="image/lock.png" alt="Fechaduras eletrônicas e digitais">
+        <p>FECHADURAS DIGITAIS</p>
+      </div>
+    </div>
+
+    <div class="emergency" data-anim>
+      <h2>ATENDIMENTO DE EMERGÊNCIA 24 HORAS</h2>
+      <p>Perdeu a chave? Trancou o carro? Precisa abrir sua casa ou comércio com urgência?<br>
+      O Chaveiro PRIME atende 24 horas por dia, direto onde você estiver em Balneário Camboriú e Região.</p>
+    </div>
+
+    <div class="contact" data-anim>
+      <a href="tel:+5547997324516" class="btn">📞 Ligar agora</a>
+      <div class="social">
+        <a href="#"><img src="image/facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="image/instagram.png" alt="Instagram"></a>
+        <a href="mailto:contato.chaveiroprime@gmail.com" aria-label="Enviar e-mail">
+          <img src="image/email.png" alt="Enviar e-mail para Chaveiro Prime">
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer style="margin-top:40px; padding:15px; font-size:14px; color:#999;">
+    © 2025 Chaveiro PRIME • Balneário Camboriú
+  </footer>
+
   <script>
   (function () {
     const STAGGER_MS = 90;
@@ -223,9 +308,7 @@
     function animate() {
       const items = Array.from(document.querySelectorAll('[data-anim]'));
       if (!items.length) return;
-
       items.forEach(el => el.classList.add('anim-seed'));
-
       let delay = 60;
       items.forEach((el) => {
         setTimeout(() => {
@@ -243,9 +326,41 @@
         animate();
       }
     }
+
+    const PHONE = "5547997324516";
+    const messages = {
+      copias: [
+        "Olá! Gostaria de informações sobre cópias de chaves.",
+        "Oi, vocês fazem cópias de chaves codificadas?",
+        "Preciso fazer algumas cópias de chave, vocês estão disponíveis?"
+      ],
+      abertura: [
+        "Olá! Preciso de ajuda para abertura residencial.",
+        "Tranquei a chave no carro, conseguem me atender?",
+        "Preciso de abertura de porta urgente, vocês atendem agora?"
+      ],
+      programacao: [
+        "Oi! Gostaria de saber sobre programação de controles.",
+        "Olá, vocês fazem programação de chaves e controles automotivos?",
+        "Preciso programar um controle remoto, como funciona o serviço?"
+      ],
+      fechaduras: [
+        "Olá! Tenho interesse em fechaduras digitais, podem me informar valores?",
+        "Gostaria de instalar uma fechadura eletrônica, vocês fazem instalação?",
+        "Oi, quero saber mais sobre fechaduras digitais para portas residenciais."
+      ]
+    };
+
+    document.querySelectorAll(".service").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const key = btn.dataset.service;
+        const arr = messages[key] || ["Olá! Gostaria de mais informações."];
+        const texto = arr[Math.floor(Math.random() * arr.length)];
+        const url = `https://wa.me/${PHONE}?text=${encodeURIComponent(texto)}`;
+        window.open(url, "_blank");
+      });
+    });
   })();
   </script>
 </body>
 </html>
-
-
