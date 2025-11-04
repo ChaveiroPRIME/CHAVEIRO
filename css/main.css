@@ -474,4 +474,14 @@ p.subtitle {
   #section-modelos .product-card { min-height: 380px; }
   #section-modelos .product-card > img { height: 160px; }
 }
+/* ======== LINKS DE TELEFONE (TEL:) ======== */
+a[href^="tel"] {
+  color: #ffffff !important;          /* deixa o telefone branco */
+  text-decoration: none !important;   /* remove o sublinhado */
+}
+
+a[href^="tel"]:hover {
+  color: #63B8FF !important;          /* tom de azul suave ao passar o dedo/mouse */
+}
+
 
