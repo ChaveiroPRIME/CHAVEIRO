@@ -6,31 +6,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Chaveiro PRIME</title>
 
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="image/logo.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="image/logo.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="image/logo.png">
+  <link rel="shortcut icon" href="image/logo.png">
+  <meta name="theme-color" content="#ffffff">
+
   <!-- Descrição -->
   <meta name="description" content="Chaveiro PRIME 24h - Atendimento rápido e profissional.">
 
-  <!-- Open Graph / Twitter atualizados -->
   <!-- Canonical -->
   <link rel="canonical" href="https://chaveiroprime.com/">
 
-  <!-- Open Graph (Facebook/WhatsApp) -->
+  <!-- Open Graph -->
   <meta property="og:title" content="Chaveiro PRIME">
   <meta property="og:description" content="Chaveiro PRIME 24h - Atendimento rápido e profissional.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://chaveiroprime.com/">
   <meta property="og:site_name" content="Chaveiro PRIME">
   <meta property="og:locale" content="pt_BR">
-
-  <!-- Imagem principal 1200x630 -->
   <meta property="og:image" content="https://chaveiroprime.com/image/logo2-1200x630.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="Logomarca do Chaveiro PRIME">
-
-  <!-- (Opcional) fallback menor 600x315 -->
-  <meta property="og:image" content="https://chaveiroprime.com/image/logo2-600x315.jpg">
-  <meta property="og:image:width" content="600">
-  <meta property="og:image:height" content="315">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
@@ -38,10 +37,8 @@
   <meta name="twitter:description" content="Chaveiro PRIME 24h - Atendimento rápido e profissional.">
   <meta name="twitter:image" content="https://chaveiroprime.com/image/logo2-1200x630.jpg">
 
-  <link rel="icon" type="image/jpeg" href="image/logo2-1200x630.jpg">
+  <!-- Fontes e CSS -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
   <link rel="stylesheet" href="css/main.css">
 
   <!-- Override: restaurando tamanho e proporção originais da seção de serviços -->
@@ -133,7 +130,6 @@
         <img src="image/molas.png" alt="molas">
         <p>MANUTENÇÃO DE MOLAS HIDRÁULICAS</p>
       </div>
-
     </div>
 
     <div class="emergency" data-anim>
@@ -165,28 +161,28 @@
   <!-- JS -->
   <script src="js/main.js" defer></script>
   <script>
-  // Número do WhatsApp (sem espaços, parênteses ou traços)
-  const whatsappNumber = '5547997324516';
+    // Número do WhatsApp (sem espaços, parênteses ou traços)
+    const whatsappNumber = '5547997324516';
 
-  // Mensagens personalizadas para cada serviço
-  const mensagens = {
-    "troca fechadura": "Olá! Gostaria de informações sobre Troca e Manutenção de Fechaduras Residenciais.",
-    "abertura": "Olá! Preciso de ajuda com Abertura Residencial.",
-    "programacao de controles": "Olá! Quero saber sobre Programação de Controles.",
-    "fechaduras digitais": "Olá! Tenho interesse em Instalação de Fechaduras Digitais.",
-    "molas": "Olá! Preciso de Manutenção de Molas Hidráulicas."
-  };
+    // Mensagens personalizadas para cada serviço
+    const mensagens = {
+      "troca fechadura": "Olá! Gostaria de informações sobre Troca e Manutenção de Fechaduras Residenciais.",
+      "abertura": "Olá! Preciso de ajuda com Abertura Residencial.",
+      "programacao de controles": "Olá! Quero saber sobre Programação de Controles.",
+      "fechaduras digitais": "Olá! Tenho interesse em Instalação de Fechaduras Digitais.",
+      "molas": "Olá! Preciso de Manutenção de Molas Hidráulicas."
+    };
 
-  // Adiciona evento de clique a todos os cards
-  document.querySelectorAll('.service').forEach(card => {
-    card.addEventListener('click', () => {
-      const tipo = card.dataset.service;
-      const msg = encodeURIComponent(mensagens[tipo]);
-      const url = `https://wa.me/${whatsappNumber}?text=${msg}`;
-      window.open(url, '_blank');
+    // Adiciona evento de clique a todos os cards
+    document.querySelectorAll('.service').forEach(card => {
+      card.addEventListener('click', () => {
+        const tipo = card.dataset.service;
+        const msg = encodeURIComponent(mensagens[tipo]);
+        const url = `https://wa.me/${whatsappNumber}?text=${msg}`;
+        window.open(url, '_blank');
+      });
     });
-  });
-</script>
+  </script>
 
 </body>
 
