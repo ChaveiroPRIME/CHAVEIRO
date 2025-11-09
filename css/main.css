@@ -484,4 +484,53 @@ a[href^="tel"]:hover {
   color: #63B8FF !important;          /* tom de azul suave ao passar o dedo/mouse */
 }
 
+/* ======== BANNER INFORMATIVO ======== */
+.info-banner {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  color: #fff;
+  padding: 14px 20px;
+  max-width: 760px;
+  margin: 20px auto 10px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(6px);
+  text-shadow: 0 1px 3px rgba(0,0,0,0.4);
+}
+
+.info-banner span {
+  display: block;
+  font-size: 15px;
+  color: #cfd8ff;
+  margin-top: 4px;
+}
+
+@media (max-width: 480px) {
+  .info-banner {
+    font-size: 14px;
+    padding: 12px 14px;
+    margin: 15px auto;
+  }
+
+  .info-banner span {
+    font-size: 13px;
+  }
+}
+
+/* ======== AJUSTE DE ESPAÇAMENTO ENTRE HEADER E BANNER ======== */
+header {
+  padding-bottom: 10px !important; /* diminui o espaço inferior do header */
+}
+
+p.subtitle {
+  margin-bottom: 40px !important; /* aproxima o subtítulo do banner */
+}
+
+.info-banner {
+  margin-top: 8px !important; /* reduz o espaço acima do banner */
+}
+
 
